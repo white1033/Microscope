@@ -1,0 +1,18 @@
+template(name='postEdit')
+  with post
+    form.main
+      div.control-group
+        label.control-label(for='url') URL
+        div.controls
+          input(name='url', type='text', value='{{url}}', placeholder='Your URL')
+      div.control-group
+        label.control-label(for='title') Title
+        div.controls
+          input(name='title', type='text', value='{{title}}', placeholder='Name your post')
+      div.control-group
+        div.controls
+          input.btn.btn-primary.submit(type='submit', value='Submit')
+      hr
+      div.control-group
+        div.controls
+          a.btn.btn-danger.delete(href='#') Delete post
